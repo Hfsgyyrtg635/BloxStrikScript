@@ -1280,7 +1280,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 		sendReport("window_created", Settings.Name or "Unknown")
 	end
 	local Passthrough = false
-	Topbar.Title.Text = "CS2 | " .. (Settings.Name or "Menu")
+	Topbar.Title.Text = "NeoClient | " .. (Settings.Name or "Menu")
 	Topbar.Title.TextXAlignment = Enum.TextXAlignment.Left
 	Topbar.Title.Position = UDim2.new(0, 15, 0.5, 0)
 
@@ -1298,7 +1298,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	end
 
 	LoadingFrame.Version.TextTransparency = 1
-	LoadingFrame.Title.Text = "CS2"
+	LoadingFrame.Title.Text = "NeoClient"
 	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "INTERFACE"
 
 	if Settings.Icon and Settings.Icon ~= 0 and Topbar:FindFirstChild('Icon') then
@@ -1338,8 +1338,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 			while true do
 				task.wait(math.random(180, 600))
 				RayfieldLibrary:Notify({
-					Title = "CS2 Interface",
-					Content = "CS2 Style Menu - sirius.menu/discord",
+					Title = "NeoClient Interface",
+					Content = "discord: soon",
 					Duration = 7,
 					Image = 4370033185,
 				})
