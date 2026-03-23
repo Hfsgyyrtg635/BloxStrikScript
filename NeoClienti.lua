@@ -739,7 +739,7 @@ function RayfieldLibrary:Notify(data) -- action e.g open messages
 
 		if data.Actions then
 			warn('Rayfield | Not seeing your actions in notifications?')
-			print("Notification Actions are being sunset for now, keep up to date on when they're back in the discord. (sirius.menu/discord)")
+			print("")
 		end
 
 		-- Calculate textbounds and set initial values
@@ -1338,7 +1338,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			while true do
 				task.wait(math.random(180, 600))
 				RayfieldLibrary:Notify({
-					Title = "NeoClient Interface",
+					Title = "NeoClient",
 					Content = "discord: soon",
 					Duration = 7,
 					Image = 4370033185,
