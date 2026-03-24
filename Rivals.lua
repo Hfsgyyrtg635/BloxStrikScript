@@ -19,7 +19,7 @@ local textservice =     game:GetService('TextService')
 local coregui =         game:GetService("CoreGui")
 
 -- update check
-local update = true
+local update = false
 if update then
 	local updategui = game:GetObjects("rbxassetid://122225389943465")[1]
 	updategui.Parent = coregui
